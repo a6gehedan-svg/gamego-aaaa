@@ -3,7 +3,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
+        "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.2.2"
     },
     "files": [
         "main.blocks",
