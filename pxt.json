@@ -1,8 +1,9 @@
 {
-    "name": "无标题",
+    "name": "无标题 - 复制",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
     },
     "files": [
         "main.blocks",
