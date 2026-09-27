@@ -1,6 +1,7 @@
 let input2 = ""
 let 背景: Image = null
 let obj1: Sprite = null
+let text1: TextSprite = null
 let color = 0
 // input
 controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -43,7 +44,8 @@ forever(function () {
         `, SpriteKind.Player)
     背景 = image.create(scene.screenWidth(), scene.screenHeight())
     input2 = ""
-    scene.setBackgroundImage(背景)
+    text1 = textsprite.create("ERROR!", 0, 15)
+    text1.setPosition(80, 80)
     while (true) {
         color = color + 1
         背景.fill(color)
@@ -71,6 +73,7 @@ forever(function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `)
+    text1.setText(":P")
     pause(36000000)
     game.reset()
 })
